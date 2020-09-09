@@ -1,0 +1,574 @@
+.mobile{
+    display: none;
+}
+
+.mobile-img{
+    display: none;
+}
+
+body a{
+    color: #AB888D;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: stretch;
+    padding: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+nav a{
+    text-decoration-line: none;
+    color: #694556;
+    font-weight: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+body u{
+    text-decoration-style: dashed;
+    text-decoration-color: #AB888D;
+}
+
+h1{
+    font-family: 'Roboto Mono';
+    font-size: 45px;
+    font-weight: normal;
+    color: #2B1F23;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    font-weight: normal;
+    color: #694556;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #694556;
+}
+
+body b{
+    color: #2B1F23;
+}
+
+
+#nav-left{
+    display: flex;
+    align-self: left;
+    width: 50%;
+}
+
+#nav-right{
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+#hero-container{
+    display: grid;
+    margin-left: 0px;
+    min-height: 600px;
+    height: fit-content;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 125px 1fr 1fr;
+}
+
+#arrow{
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+    text-align: center;
+    height: fit-content;
+    align-self: center;
+    z-index: -2;
+    margin-top: 65px;
+}
+
+.bounce {
+    -webkit-animation: bounce 6s infinite ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+}
+
+#hero-image{
+    background-image: url(../images/hero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    z-index: -3;
+}
+
+#hero-header{
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    text-align: left;
+}
+
+#hero-right{
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: white;
+    height: fit-content;
+    z-index: 1;
+}
+
+#hero-left{
+    grid-column-end: 3;
+    grid-row: 3 / span 2;
+    text-align: right;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: -2;
+}
+
+#orchid-reveal{
+    grid-column: 3 / span 2;
+    grid-row-start: 3;
+    z-index: -1;
+    background-image: url(../images/Orchid.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200px;
+    opacity: 0%;
+}
+
+#paint-reveal{
+    grid-column: 2 / span 2;
+    grid-row-start: 1;
+    z-index: -1;
+    background-image: url(../images/Paint.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 150px;
+    opacity: 0%
+}
+
+#cat-reveal{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    z-index: -1;
+    background-image: url(../images/Cat.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200px;
+    opacity: 0%;
+}
+
+#socialcontainer{
+    align-self: flex-end;
+}
+
+.logo{
+    height: 40px;
+}
+
+#logo{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#nav-right a{
+    padding: 10px;
+    margin-left: 20%;
+}
+
+#button{
+    background-color: #5BAA0A;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#about{
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 125px auto;
+    margin-top: 15px;
+}
+
+#aboutheader{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#aboutcontainer{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    padding: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    height: fit-content;
+    background-color: white;
+}
+
+.texture{
+    z-index: -10;
+    padding-top: 10%;
+    max-height: 40vh;
+}
+
+#texture1{
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 2;
+    text-align: end;
+}
+
+#skills{
+    margin-top: 15px;
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 125px auto;
+}
+
+#skillsheader{
+    grid-column: 2 / span 1;
+}
+
+#skill1{
+    grid-column: 1 / span 1;
+}
+
+#skill2{
+    grid-column: 2 / span 1;
+}
+
+#skill3{
+    grid-column: 3/ span 1;
+}
+
+.skillcontainer{
+    padding: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+    grid-row: 2 / span 1;
+    height: 250px;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin-top: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#footerleft{
+   width: 70%;
+   justify-self: flex-start; 
+   align-self: center;
+}
+
+#footerright{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+#myworkwrapper{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 15px;
+}
+
+#casestudies{
+    padding: 25px;
+    padding-top: 100px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.workcontainer{
+    padding: 25px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    text-align: center;  
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#myworkheader{
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#graphicdesign{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#photography{
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#writing{
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+}
+
+#learning-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+}
+
+#learning-explainer{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#learning-header{
+    grid-column: 3 / span 2;
+}
+
+.learning-box{
+    grid-area: box;
+    width: 15vw;
+    height: 15vw;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#text-container{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 20px 50px 20px;
+    height: fit-content;
+    align-self: left;
+}
+
+#study{
+    align-content: center;
+}
+
+#img-container{
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+#study-img{
+    max-width: 70%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#study{
+    margin: 15px 0px 0px 15px;
+}
+
+.li active{
+    color: #AB888D;
+}
+
+
+/* Smaller Screen + Mobile CSS */
+
+@media only screen and (max-width: 700px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+
+    .mobile-img{
+        display: unset;
+    }
+
+    #hamburger-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        height: 35px;
+        width: inherit;
+        text-align: right;
+    }
+
+    #burgline{
+        width: 35px;
+        height: 3px;
+        background-color: #5BAA0A;
+        margin: 3px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+
+    #hero-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 70x 200px 200px 200px;
+        height: fit-content;
+        margin-top: none;
+    }
+
+    #hero-image{
+        grid-column: 1 / span 1;
+        grid-row-end: 3;
+        background-size: cover;
+        background-position: center;
+        z-index: -10;
+    }
+
+    #hero-header{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        height: fit-content;
+        align-self: right;
+    }
+
+    #hero-left{
+        grid-row: 2  / span 1;
+        grid-column: 2 / span 1;
+        text-align: right;
+        display: flex;
+        align-items: flex-end;
+        padding-right: none;
+    }
+
+    .superscript{
+        align-items: flex-start;
+        z-index: -9;
+    }
+
+    #hero-right{
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 2;
+        margin: auto;
+    }
+
+    #aboutcontainer{
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 1;
+        padding: 15px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        height: fit-content;
+        background-color: white;
+    }
+
+    #skills{
+        margin-top: 15px;
+        display: grid;
+        height: fit-content;
+        grid-template-rows: .5fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+        
+    #skillsheader{
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
+    }
+        
+    #skill1{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 2;
+    }
+        
+    #skill2{
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 2;
+    }
+        
+    #skill3{
+        grid-row: 4/ span 1;
+        grid-column: 1 / span 2;
+    }
+    
+    .skillcontainer{
+        padding: 15px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        background-color: white;
+        margin-top: 15px;
+        height: fit-content;
+    }
+
+    #myworkwrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: .5fr 1fr 1fr 1fr 1fr;
+        margin-top: 15px;
+    }
+        
+    #casestudies{
+        padding: 25px;
+        padding-top: 100px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+    }
+        
+    .workcontainer{
+        padding: 25px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        text-align: center;  
+        margin-top: 15px;
+    }
+        
+    #myworkheader{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        align-self: top;
+    }
+        
+    #graphicdesign{
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+        margin-right: 7.5px;
+        margin-left: 0px;
+    }
+        
+    #photography{
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+        margin-left: 7.5px;
+    }
+        
+    #writing{
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+        margin-right: 7.5px;
+        margin-left: 0px;
+    }
+}
