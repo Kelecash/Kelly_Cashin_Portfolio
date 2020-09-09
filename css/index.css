@@ -63,7 +63,6 @@ body b{
     color: #2B1F23;
 }
 
-
 #nav-left{
     display: flex;
     align-self: left;
@@ -395,7 +394,6 @@ footer{
 .li active{
     color: #AB888D;
 }
-
 
 /* Smaller Screen + Mobile CSS */
 
