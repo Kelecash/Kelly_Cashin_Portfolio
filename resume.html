@@ -7,6 +7,7 @@
     <title>Kelly's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="icon" type="image/png" href="images/Logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Hotjar Tracking Code for https://kelecash.github.io/UX_UI_HW_19/ -->
 <script>
     (function(h,o,t,j,a,r){
@@ -20,30 +21,24 @@
 </script>
 </head>
 <body>
-    
-    <!--START DESKTOP NAV-->
-    <nav class="desktop">
-        <div id="nav-left">
-            <a href="index.html"><img class="logo" src="images/Logo.png"></a>
-        </div>
-        <div id="nav-right">
-            <a id="nav-link" href="learning.html">Learning</a>
-            <a id="nav-link" href="portfolio.html">Portfolio</a>
-            <a id="button" href="resume.html">Resume</a>
-        </div>
-    </nav>
-<!--END DESKTOP NAV!!!-->
-
-<!--START MOBILE NAV-->
-    <nav class="mobile">
+    <!--This is the responsive navigation to be added to each page-->
+    <section class="navigation">
+        <div class="nav-container">
+        <div class="brand">
         <a href="index.html"><img class="logo" src="images/Logo.png"></a>
-        <div id="hamburger-container">
-            <div id="burgline"></div>
-            <div id="burgline"></div>
-            <div id="burgline"></div>
         </div>
-    </nav>
-<!--END MOBILE NAV!!!-->
+        <nav>
+        <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            </nav>
+        </div>
+    </section>
+    <!--Navigation ends here-->
 
     <footer>
         <div id="footerleft">

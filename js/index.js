@@ -30,3 +30,22 @@ $(document).ready(function(){
 $(window).scroll(function(){
     $(".bounce").css("opacity", 1 - $(window).scrollTop() / 250); 
   });
+
+(function ($) {
+    $(function () {
+        $('nav ul li > a:not(:only-child)').click(function (e) {
+            $(this).siblings('.nav-dropdown').toggle();
+            $('.nav-dropdown').not($(this).siblings()).hide();
+            e.stopPropagation()
+        });
+        $('html').click(function () {
+            $('.nav-dropdown').hide();
+        });
+        $('#nav-toggle').on('click', function () {
+            this.classList.toggle('active') 
+        });
+        $('#nav-toggle').click(function () {
+            $('nav ul').toggle()
+        });
+    })
+})(jQuery);

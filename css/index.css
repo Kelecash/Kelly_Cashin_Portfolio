@@ -11,21 +11,77 @@ body a{
     font-weight: bold;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: stretch;
-    padding: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+/* Start Navigation Styles */
+.navigation {
+    height: 70px;
+    background: transparent;
+    position: relative;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2000;
 }
 
-nav a{
-    text-decoration-line: none;
-    color: #694556;
-    font-weight: normal;
+.nav-container {
+    max-width: 2000px;
+    margin: 0 auto;
 }
+
+.brand {
+    position: absolute;
+    padding: 15px;
+    float: inline-start;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+nav {
+    float: right;
+    width: fit-content;
+    height: 70px;
+    padding-right: 70px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: white;
+    color: #694556;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #5BAA0A;
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.nav-mobile{
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    height: 70px;
+    width: 70px;
+    z-index: 1000;
+}
+/* End Navigation Styles */
 
 body{
     padding: 0;
@@ -61,28 +117,6 @@ body{
 
 body b{
     color: #2B1F23;
-}
-
-#nav-left{
-    display: flex;
-    align-self: left;
-    width: 50%;
-}
-
-#nav-right{
-    display: flex;
-    align-self: center;
-    justify-content: flex-end;
-    width: 50%;
-}
-
-#hero-container{
-    display: grid;
-    margin-left: 0px;
-    min-height: 600px;
-    height: fit-content;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 125px 1fr 1fr;
 }
 
 #arrow{
@@ -190,11 +224,6 @@ body b{
 
 #logo{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-#nav-right a{
-    padding: 10px;
-    margin-left: 20%;
 }
 
 #button{
@@ -338,28 +367,32 @@ footer{
 }
 
 #learning-grid{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #learning-explainer{
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 #learning-header{
-    grid-column: 3 / span 2;
+
 }
 
 .learning-box{
-    grid-area: box;
-    width: 15vw;
-    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    width: 30vh;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     margin-left: 15px;
     margin-bottom: 15px;
+}
+.learning-box img{
+    height: 80%;
+    align-self: center;
+    margin: auto;
 }
 
 #text-container{
@@ -416,23 +449,96 @@ footer{
         display: unset;
     }
 
-    #hamburger-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        height: 35px;
-        width: inherit;
-        text-align: right;
+    /* Start Mobile Navigation Styling */
+    .nav-mobile{
+        display: block;
+        z-index: 1000
     }
 
-    #burgline{
-        width: 35px;
-        height: 3px;
-        background-color: #5BAA0A;
-        margin: 3px;
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    nav {
+        width: 100%;
+        padding: 70px 0 0px;
     }
+
+    nav ul{
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background: white;
+        position: fixed;
+        text-align: center;
+    }
+
+    nav li{
+        float: none;
+    }
+
+    nav a{
+        padding: 15px;
+        line-height: 20px;
+    }
+
+    nav ul li a{
+        padding-left: 30px;
+    }
+
+    .nav-dropdown{
+        position: static;
+    }
+
+    #nav-toggle {
+        position: absolute;
+        left: 18px;
+        top: 22px;
+        cursor: pointer;
+        padding: 10px 35px 16px 0px;
+    }
+
+    /* Start hamburger menu animation */
+    #nav-toggle span, #nav-toggle span::before, #nav-toggle span::after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 3px;
+        width: 35px;
+        background: #694556;
+        position: absolute;
+        display: block;
+        content: '';
+        transition: all 300ms ease-in-out;
+    }
+
+    #nav-toggle span::before {
+        top: -10px;
+    }
+
+    #nav-toggle span::after {
+        bottom: -10px;
+    }
+
+    #nav-toggle span, #nav-toggle span::before, #nav-toggle span::after {
+        transition: all 500ms ease-in-out;
+    }
+
+    #nav-toggle.active span {
+        background-color: transparent;
+    }
+
+    #nav-toggle.active span::before, #nav-toggle.active span::after {
+        top: 0;
+    }
+
+    #nav-toggle.active span::before {
+        transform: rotate(45deg);
+    }
+
+    #nav-toggle.active span::after {
+        transform: rotate(-45deg);
+    }
+    /* End hamburger menu animation */
+    /* End mobile navigation styling */
 
     #hero-container{
         display: grid;

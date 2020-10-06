@@ -4,41 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citizen Advocacy Case Study</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="images/Logo.png">
 </head>
 <body>
-    <!--Bootstrap Nav Component-->
-    <nav class="navbar navbar-expand-lg">
-        <div class="d-flex flex-grow-1">
-            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-            <a class="navbar-brand d-none d-lg-inline-block" href="#">
-                <img src="images/Logo.png" class="logo">
-            </a>
-            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                <img src="images/Logo.png" class="logo" alt="logo">
-            </a>
-            <div class="w-100 text-right">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+    <!--This is the responsive navigation to be added to each page-->
+    <section class="navigation">
+        <div class="nav-container">
+        <div class="brand">
+        <a href="index.html"><img class="logo" src="images/Logo.png"></a>
         </div>
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item nav-active">Learning</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Resume</a>
-                </li>
-            </ul>
+        <nav>
+        <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
         </div>
-    </nav>
+        <ul class="nav-list">
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            </nav>
+        </div>
+    </section>
+    <!--Navigation ends here-->
 
     <!--Study intro using Bootstrap grid system-->
     <section id="study" class="row">
@@ -151,5 +139,6 @@
     </div>
 </section>
 </body>
+<script src="js/index.js"></script>
 </html>
 
