@@ -20,58 +20,52 @@
 </script>
 </head>
 <body>
-<!--This is the responsive navigation to be added to each page-->
-<section class="navigation">
-    <div class="nav-container">
-      <div class="brand">
-      <a href="index.html"><img class="logo" src="images/Logo.png"></a>
-    </div>
-    <nav>
-      <div class="nav-mobile">
-        <a id="nav-toggle" href="#!"><span></span></a>
-      </div>
-      <ul class="nav-list">
-        <li><a href="learning.html">Learning</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        </nav>
-      </div>
-</section>
-<!--Navigation ends here-->
-
-    <section id="hero-container">
-        <div id="hero-image">
+    <!--This is the responsive navigation to be added to each page-->
+    <section class="navigation">
+        <div class="nav-container">
+        <div class="brand">
+        <a href="index.html"><img class="logo" src="images/Logo.png"></a>
         </div>
-        <div id="hero-header">
-            <h1>I'm Kelly</h1>
+        <nav>
+        <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
         </div>
-        <div id="hero-left">
-            <p class="superscript">Talk to me ^_^</p>
-            <br>
-            <br>
-            <div class="socialcontainer">
-                <a href="https://www.instagram.com/kerly_q/"><img class="logo" src="images/Instagram-Mobile.png" href="https://www.instagram.com/kerly_q/"></a>
-                <a href="https://twitter.com/kelecash"><img class="logo" src="images/Twitter-Mobile.png" href="https://www.instagram.com/kerly_q/"></a>
-                <a href="https://www.linkedin.com/in/kelly-cashin/"><img class="logo" src="images/Linkedin-Mobile.png" href="https://www.instagram.com/kerly_q/"></a>
-            </div>
-        </div>
-        <div id="hero-right">
-            <h2>I am a <b>UX designer</b>. I developed a passion for human centered design after working in the breakneck ATL tech start-up scene~</h2>
-            <p><b>What motivates me:</b> I always want better for people!</p> 
-            <p><b>What I love:</b> <u id="orchids">Orchids</u>, <u id="paint">spilling paint</u> on things, experimental music, <u id="cat">cat pictures</u>, 
-                Tetris <a href="https://jstris.jezevec10.com/u/zweiga">(play me)</a>, finding alternative routes to the Beltline. </p>
-        </div>
-        <div class="desktop" id="orchid-reveal">
-        </div>
-        <div class="desktop" id="paint-reveal">
-        </div>
-        <div class="desktop" id="cat-reveal">
-        </div>
-        <div class="bounce desktop" id="arrow">
-            <img src="images/arrow.png">
+        <ul class="nav-list">
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            </nav>
         </div>
     </section>
-    <section id="about">
+    <!--Navigation ends here-->
+    <!--Hero-->
+    <section class="container" id="hero">
+        <div class="container-inner">
+            <div id="hello">
+                <p class="superscript">Talk to me ^_^</p>
+            </div>
+            <div id="social-buttons">
+                <a href=""><img class="logo" src="images/linkedin-mobile.png"></a>
+                <a href=""><img class="logo" src="images/twitter-mobile.png"></a>
+                <a href=""><img class="logo" src="images/instagram-mobile.png"></a>
+            </div>
+        </div>
+        <div class="container-inner">
+            <div id="intro">
+                <h1>I'm Kelly.</h1>
+                <div id="intro-container">
+                    <h2>I am a <b>UX designer</b>. I discovered my passion for human centered design working with ATL start-ups~</h2>
+                    <p><b>What motivates me:</b> I always want better for people!</p> 
+                    <p><b>What I love:</b> Orchids, spilling paint on things, experimental music, Tetris <a href="https://jstris.jezevec10.com/u/zweiga">(play me)</a>.</p>
+                </div>
+            </div>
+            <div class="bounce desktop arrow" id="arrow1">
+                <img src="images/arrow.png">
+            </div>
+        </div>
+
+    </section>
+        <section class="container scrolled" id="about">
         <div id="aboutheader">
             <h1>About</h1>
         </div>
@@ -79,11 +73,14 @@
             <p>In 2018 while working as a marketing specialist at Saige Chefs, my team noticed a massive drop-off in our funnel during onboarding. I studied user behavior in FullStory and recorded points of frustration before presenting a solution in the form of what I later learned to be a wireframe. “Nice UX work,” my manager commented. 
             <p>I thanked her- then promptly Googled, “What is UX?”</p>
             <p>I was instantly obsessed.</p> 
-            <p>To learn more about how to speak with users, I took on a customer success role at Matcha. Our team worked closely with product and engineering. The more I practiced empathy for our users on behalf of the company, the more certain I became that I wanted to learn the skills necessary to use empathy in the design process.</p>
+            <p>To learn more about how to speak with users, I took on a customer success role at Matcha. Our team worked closely with product and engineering. The more I practiced empathy for our users, the more I wanted to learn how to implement empathy in the design process.</p>
             <p>In 2020 I took the plunge and enrolled in Georgia Tech’s UI/UX Bootcamp.</p>
         </div>
+        <div class="bounce desktop arrow" id="arrow2">
+            <img src="images/arrow.png">
+        </div>
     </section>
-    <section id="skills">
+    <section class="container" id="skills">
         <div id="skillsheader">
         <h1>Skills</h1>
         </div>
@@ -105,7 +102,7 @@
             <p>I learned graphic design for pring in magazine design classes. I use this skill for everything I do- even spreadsheets!</p>
             <br>
             <img class="logo" id="logo" src="images/photoshop.png">
-            <img class="logo" id="logo" src="images/canva.png">
+            <img class="logo" id="logo" src="images/figma.png">
         </div>
     </section>
     <footer>

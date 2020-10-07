@@ -1,3 +1,10 @@
+/* 
+Site Styles 
+
+Top of this document is for styles to be used across the whole site. 
+Styles to be used on individual pages further down document.
+*/
+
 .mobile{
     display: none;
 }
@@ -10,6 +17,59 @@ body a{
     color: #AB888D;
     font-weight: bold;
 }
+
+body{
+    scroll-snap-type: mandatory;
+    padding: 0;
+    margin: 0;
+}
+
+body u{
+    text-decoration-style: dashed;
+    text-decoration-color: #AB888D;
+}
+
+h1{
+    font-family: 'Roboto Mono';
+    font-size: 45px;
+    font-weight: normal;
+    color: #2B1F23;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    font-weight: normal;
+    color: #694556;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #694556;
+}
+
+body b{
+    color: #2B1F23;
+}
+
+/* Start asset styles */
+.logo{
+    height: 40px;
+}
+
+#logo{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#button{
+    background-color: #5BAA0A;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+/* End asset styles */
 
 /* Start Navigation Styles */
 .navigation {
@@ -55,7 +115,7 @@ nav a {
     display: block;
     padding: 0 20px;
     line-height: 70px;
-    background: white;
+    background-color: white;
     color: #694556;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
@@ -82,50 +142,81 @@ nav a:hover {
     z-index: 1000;
 }
 /* End Navigation Styles */
+/* End Site-Wide Styles */
 
-body{
-    padding: 0;
-    margin: 0;
+/**/
+
+/* Styles beneath this point are individual page styles */
+
+/**/
+
+/* Start 'index.html' Styles */
+.container {
+    scroll-snap-align: start;
+    height: 500px;
+    width: 100%;
+    opacity: 0;
 }
 
-body u{
-    text-decoration-style: dashed;
-    text-decoration-color: #AB888D;
+#hero {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/hero.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
 }
 
-h1{
-    font-family: 'Roboto Mono';
-    font-size: 45px;
-    font-weight: normal;
-    color: #2B1F23;
-    text-align: center;
+.container-inner {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    width: 45%;
+    height: 100%;
+    margin: 0 2.5%;
 }
 
-h2{
-    font-family: 'Roboto Mono';
-    font-size: 18px;
-    font-weight: normal;
-    color: #694556;
+#hello {
+    grid-row: 1 / span 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-body{
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    font-weight: 200;
-    color: #694556;
+#hello p {
+    background-color: white
 }
 
-body b{
-    color: #2B1F23;
+#social-buttons {
+    grid-row: 2 / span 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-#arrow{
-    grid-column: 3 / span 2;
-    grid-row: 3 / span 1;
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+#intro h1 {
+    margin-top: 15px;
+}
+
+#intro-container {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#arrow1 {
+    grid-row: 2 / span 1;
     text-align: center;
     height: fit-content;
     align-self: center;
-    z-index: -2;
+    z-index: 0;
     margin-top: 65px;
 }
 
@@ -139,131 +230,37 @@ body b{
 	80% { -webkit-transform: translateY(-10px); }
 }
 
-#hero-image{
-    background-image: url(../images/hero.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 3;
-    z-index: -3;
-}
-
-#hero-header{
-    grid-column: 3 / span 2;
-    grid-row: 1;
-    text-align: left;
-}
-
-#hero-right{
-    grid-column: 3 / span 2;
-    grid-row: 2 / span 2;
-    padding: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    background-color: white;
-    height: fit-content;
-    z-index: 1;
-}
-
-#hero-left{
-    grid-column-end: 3;
-    grid-row: 3 / span 2;
-    text-align: right;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    z-index: -2;
-}
-
-#orchid-reveal{
-    grid-column: 3 / span 2;
-    grid-row-start: 3;
-    z-index: -1;
-    background-image: url(../images/Orchid.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 200px;
-    opacity: 0%;
-}
-
-#paint-reveal{
-    grid-column: 2 / span 2;
-    grid-row-start: 1;
-    z-index: -1;
-    background-image: url(../images/Paint.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 150px;
-    opacity: 0%
-}
-
-#cat-reveal{
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 2;
-    z-index: -1;
-    background-image: url(../images/Cat.png);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 200px;
-    opacity: 0%;
-}
-
-#socialcontainer{
-    align-self: flex-end;
-}
-
-.logo{
-    height: 40px;
-}
-
-#logo{
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-#button{
-    background-color: #5BAA0A;
-    color: white;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-#about{
+#about {
+    background-image: url(../images/texture2.png), url(../images/texture1.png);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30%;
     display: grid;
     height: fit-content;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 125px auto;
-    margin-top: 15px;
+    grid-template-rows: 125px auto 125px;
 }
 
-#aboutheader{
-    grid-column: 2 / span 2;
+#aboutheader {
     grid-row: 1 / span 1;
 }
 
 #aboutcontainer{
-    grid-column: 2 / span 2;
     grid-row: 2 / span 1;
-    padding: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     height: fit-content;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     background-color: white;
+    padding: 15px;
+    margin: auto;
+    width: 50%
 }
 
-.texture{
-    z-index: -10;
-    padding-top: 10%;
-    max-height: 40vh;
-}
-
-#texture1{
-    grid-row: 1 / span 1;
-    grid-column: 3 / span 2;
-    text-align: end;
+#arrow2 {
+    grid-row: 3 / span 1;
+    text-align: center;
+    height: fit-content;
+    align-self: center;
+    z-index: 0;
+    margin-top: 65px;
 }
 
 #skills{
@@ -389,9 +386,12 @@ footer{
     margin-left: 15px;
     margin-bottom: 15px;
 }
-.learning-box img{
-    height: 80%;
-    align-self: center;
+
+.learning-box img, .learning-box a {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    align-content: center;
     margin: auto;
 }
 
@@ -431,6 +431,11 @@ footer{
 /* Smaller Screen + Mobile CSS */
 
 @media only screen and (max-width: 700px){
+    /* Mobile Site Styles 
+
+    Portion this document is for styles to be used across the whole site. 
+    Styles to be used on individual pages further down document.
+    */
     .desktop{
         display: none;
     }
@@ -457,19 +462,25 @@ footer{
 
     nav {
         width: 100%;
-        padding: 70px 0 0px;
+        padding: 0px;
+        background-color: white;
     }
-
+    
     nav ul{
         display: none;
         list-style: none;
         margin: 0;
         padding: 0;
+        padding-top: 70px;
         height: 100%;
         width: 100%;
-        background: white;
+        background-image: url(../images/texture3.png);
+        background-repeat: no-repeat;
+        background-position: unset;
+        background-size: cover;
         position: fixed;
         text-align: center;
+        z-index: -1;
     }
 
     nav li{
@@ -540,47 +551,41 @@ footer{
     /* End hamburger menu animation */
     /* End mobile navigation styling */
 
-    #hero-container{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 70x 200px 200px 200px;
-        height: fit-content;
-        margin-top: none;
+    #hero {
+        flex-direction: column-reverse;
+        background-size: 400px;
+        background-position-y: 69px;
+        background-position-x: -36px;
     }
 
-    #hero-image{
-        grid-column: 1 / span 1;
-        grid-row-end: 3;
-        background-size: cover;
-        background-position: center;
-        z-index: -10;
-    }
-
-    #hero-header{
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 1;
-        height: fit-content;
-        align-self: right;
-    }
-
-    #hero-left{
-        grid-row: 2  / span 1;
-        grid-column: 2 / span 1;
-        text-align: right;
+    .container-inner{
         display: flex;
+        flex-direction: column;
         align-items: flex-end;
-        padding-right: none;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0%
     }
 
-    .superscript{
-        align-items: flex-start;
-        z-index: -9;
+    #intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 480px;
     }
 
-    #hero-right{
-        grid-column: 1 / span 2;
-        grid-row: 3 / span 2;
-        margin: auto;
+    #intro-container {
+        margin-top: 250px;
+    }
+
+    #hello {
+        margin-top: -365px;
+        margin-right: 15px;
+    }
+
+    #social-buttons {
+        margin-right: 15px;
     }
 
     #aboutcontainer{
