@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citizen Advocacy Case Study</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="icon" type="image/png" href="images/Logo.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kelly's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/case-study.css">
+        <link rel="icon" type="image/png" href="images/Logo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Hotjar Tracking Code for https://kelecash.github.io/UX_UI_HW_19/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1982219,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    </head>
 <body>
     <!--This is the responsive navigation to be added to each page-->
     <section class="navigation">
@@ -27,10 +39,9 @@
         </div>
     </section>
     <!--Navigation ends here-->
-
-    <!--Study intro using Bootstrap grid system-->
-    <section id="study" class="row">
-        <div id="text-container" class= "col-lg-6 col-m-6 col-sm-12">
+    <section class="study-wrapper">
+        <div class="study-section">
+            <h2>Title</h2>
             <p><b>Context:</b> Citizen Advocacy is a nonprofit organization whose goal is to foster long-term friendships between people with disabilities and an advocate. With social changes due to Covid-19, the need for a web presence that encourages social sharing and friend-raising in a digital environment has increased.</p>
             <p><b>My Role:</b> UX Designer</p>
             <p><b>My Team:</b> Hannah Turner (hturner0696@gmail.com) & David Duffee (davidhduffee@gmail.com)</p>
@@ -38,107 +49,107 @@
             <ul>Jump to:
             </ul>
         </div>
-        <div id="img-container" class= "col-lg-6 col-m-6 col-sm-12">
-            <h1>Citizen Advocacy of Atlanta-DeKalb Web Redesign</h1>
-            <h1>"</h1>
-            <br>
-            <h2>Maybe if we had a better web presence, people would find us.</h2>
-            <br>
-            <p>-<b>Derona King</b>, Director of Citizen Advocacy Atlanta-DeKalb</p>
-        </div>
-    </section> 
+        <div class="study-image">
 
-<!--Research section using Bootstrap grid system-->
-    <section id="study" class="row study-wrapper">
-        <div id="text-container" class= "col-lg-6 col-m-6 col-sm-12">
-            <h2><b>Phase One:</b> User Research</h2>
+        </div>
+        <div class="study-section">
+            <h2><a name="phase1"><b>Phase One:</b> User Research</a></h2>
             <br>
             <p>We started interviewing the director to understand the role their website filled relative to the current needs of the organization. The inability to meet with others in community spaces due to Covid-19 was preventing the coordinator at Citizen Advocacy to discover people willing to support their misison. This guided our research in asking: How do people discover causes? What them to support a cause? When and how do they share a cause? We conducted a series of interviews. The data we pooled from the interviews guided our creation of online survey to better understand people’s motives. Our findings were that most people prefer to support a cause they feel a personal connection to, they are more willing to trust an organization that has been social-proofed by people in their network, and they most likely to share visual media and articles. </p>
         </div>
-        <div id="img-container" class= "col-lg-6 col-m-6 col-sm-12">
-           <img id="study-img" src="images/citizenadvocacy-userflow.png">
+        <div class="study-image">
+    
+        </div>
+        <div class="study-section">
+            <h2><a name="phase2"><b>Phase Two:</b> Definition & Synthesis</a></h2>
+            <br>
+            <p>There were 4 major user insights we uncovered in our research, which could be summed up in the following statements:</p>
+            <ul>
+                <li>I want to share articles and visual media on Facebook and Instagram.</li>
+                <li>I need to learn through visual media and articles.</li>
+                <li>I want to support a cause by donating and raising awareness.</li>
+                <li>I wish I knew the impact of disabilities, how I can help, and what is already being done.</li>
+            </ul>
+            <p>We found that in order to gain support, Citizen Advocacy would need to make clear to website visitors: what is currently being done, and what the user specifically can do to help. We wanted to create 3 clear user paths: volunteer, donate or spread the word.</p>
+            <p>Incorporating these flows into the design of the website would marry the needs of Citizen Advocacy to the needs of potential donors.</p>
+        </div>
+        <div class="study-image">
+            <img src="images/citizenadvocacy-userflow.png">
+        </div>
+        <div class="study-section">
+            <h2><a name="phase3"><b>Phase Three:</b> Ideation</a></h2>
+            <br>
+            <p>When thinking about visual design, we wanted to make the human connections that Citizen Advocacy builds at the forefront of each page. This meant adding larger and more visual imagery of their work. We would do this by using large hero images relevant to each site page.</p>
+            <p>We didn’t want people to have to search for ways to help. We wanted to provide them several calls to action in order to coax them along the three user paths we created to help Citizen Advocacy.</p>
+            <p>Additionally, we wanted a complete redesign where relationship stories and Citizen Advocacy’s philosophy in social justice for people with disabilities received the first priority.</p>
+        </div>
+        <div class="study-image">
+            <img src="images/citizenadvocacy-matrix.png">
+        </div>
+        <div class="study-section">
+            <h2><a name="phase4"><b>Phase Four:</b> Prototype</a></h2>
+            <br>
+            <p>Our initial prototype focused on the reorganization of site information. We reduced condensed the number of options within the primary navigation by combining site pages that housed related information. </p>
+            <p>We also used hero images across the site to create a visual experience with an immediate emotional impact.</p>
+            <p>On the homepage, the three user paths are made immediately apparent  with calls to action as the user scrolls.</p>
+        </div>
+        <div class="study-image">
+            
+        </div>
+        <div class="study-section">
+            <h2><a name="phase5"><b>Phase Five:</b> User Testing & Outcomes</a></h2>
+            <br>
+            <p>We made a user testing plan that would mirror the average use case for someone learning about Citizen Advocacy for the very first time. Users were given a series of 4 tasks to complete:</p>
+            <ul>
+                <li>Find the organization’s mission statement</li>
+                <li>Locate the organization’s office address</li>
+                <li>Find information about becoming a Citizen Advocate</li>
+                <li>Find options for donating</li>
+            </ul>
+            <p>We discovered that the updated navigation and information architecture for the site made it quick and easy for users to discover what they needed.</p>
+            <p>Our primary observation for site improvements involved further building out the home page with key pieces of information about Citizen Advocacy- such as the mission statement- since this is where user’s intuitively wanted to look.</p>
+        <p>Additionally, the users appreciated when there were several calls to action, such as on the ‘About Us’ page. They felt this made browsing easy and provided them a clear path.</p>
+        </div>
+        <div class="study-image">
+            
+        </div>
+        <div class="study-section">
+            <h2><a name="phase6"><b>Phase Six:</b> Final Prototype & Conclusions</a></h2>
+            <br>
+            <p>Our final prototype brought in large emotionally impactful images. We made some slight adjustments to the original color scheme for Citizen Advocacy to create better contrast and accessibility. And we also added more opportunities for social sharing across the site.</p>
+            <p>The typography that was modern, approachable, and easy to read. We felt this would help open site visitors up more to connecting with the subject matter of the website.</p>
+            <p>Major takeaways from this project:</p>
+            <ul>
+                <li>The role of a UX team is to discover what the common ground is between stakeholders and their users, then help everyone achieve their goals!</li>
+                <li>Put people first ALWAYS! Adding a human element to your website design is inviting humans to connect with you. UX helps the user want to interact with your brand.</li>
+            </ul>
+        </div>
+        <div class="study-image">
+            
         </div>
     </section>
-
-<!--Synthesis section using Bootstrap grid system-->
-<section id="study" class="row study-wrapper">
-    <div id="text-container" class= "col-lg-6 col-m-6 col-sm-12">
-        <h2><a name="phase2"><b>Phase Two:</b> Definition & Synthesis</a></h2>
-        <br>
-        <p>There were 4 major user insights we uncovered in our research, which could be summed up in the following statements:</p>
-        <ul>
-            <li>I want to share articles and visual media on Facebook and Instagram.</li>
-            <li>I need to learn through visual media and articles.</li>
-            <li>I want to support a cause by donating and raising awareness.</li>
-            <li>I wish I knew the impact of disabilities, how I can help, and what is already being done.</li>
-        </ul>
-        <p>We found that in order to gain support, Citizen Advocacy would need to make clear to website visitors: what is currently being done, and what the user specifically can do to help. We wanted to create 3 clear user paths: volunteer, donate or spread the word.</p>
-        <p>Incorporating these flows into the design of the website would marry the needs of Citizen Advocacy to the needs of potential donors.</p>
-    </div>
-    <div id="img-container" class= "col-lg-6 col-m-6 col-sm-12">
-       <img id="study-img" src="images/citizenadvocacy-matrix.png">
-    </div>
-</section>
-
-<!--Ideation section using Bootstrap grid system-->
-<section id="study" class="row study-wrapper">
-    <div id="text-container" class= "col-lg-6 col-m-6 col-sm-12">
-        <h2><b>Phase Three:</b> Ideation</h2>
-        <br>
-        <p>When thinking about visual design, we wanted to make the human connections that Citizen Advocacy builds at the forefront of each page. This meant adding larger and more visual imagery of their work. We would do this by using large hero images relevant to each site page.</p>
-        <p>We didn’t want people to have to search for ways to help. We wanted to provide them several calls to action in order to coax them along the three user paths we created to help Citizen Advocacy.</p>
-        <p>Additionally, we wanted a complete redesign where relationship stories and Citizen Advocacy’s philosophy in social justice for people with disabilities received the first priority.</p>
-    </div>
-    <div id="img-container" class= "col-lg-6 col-m-6 col-sm-12">
-       <img id="study-img" src="images/homepage-prototype.png">
-       <img id="study-img" src="images/aboutus-prototype.png">
-    </div>
-</section>
-
-<!--Prototypr section using Bootstrap grid system-->
-<section id="study" class="row study-wrapper">
-    <div id="text-container" class= "col-lg-6 col-m-6 col-sm-12">
-        <h2><b>Phase Four:</b> Prototype</h2>
-        <br>
-        <p>Our initial prototype focused on the reorganization of site information. We reduced condensed the number of options within the primary navigation by combining site pages that housed related information. </p>
-        <p>We also used hero images across the site to create a visual experience with an immediate emotional impact.</p>
-        <p>On the homepage, the three user paths are made immediately apparent  with calls to action as the user scrolls.</p>
-    </div>
-</section>
-
-<!--Testing section using Bootstrap grid system-->
-<section id="study" class="row study-wrapper">
-    <div id="text-container" class= "col-lg-6 col-m-6 col-sm-12">
-        <h2><b>Phase Five:</b> User Testing & Outcomes</h2>
-        <br>
-        <p>We made a user testing plan that would mirror the average use case for someone learning about Citizen Advocacy for the very first time. Users were given a series of 4 tasks to complete:</p>
-        <ul>
-            <li>Find the organization’s mission statement</li>
-            <li>Locate the organization’s office address</li>
-            <li>Find information about becoming a Citizen Advocate</li>
-            <li>Find options for donating</li>
-        </ul>
-        <p>We discovered that the updated navigation and information architecture for the site made it quick and easy for users to discover what they needed.</p>
-        <p>Our primary observation for site improvements involved further building out the home page with key pieces of information about Citizen Advocacy- such as the mission statement- since this is where user’s intuitively wanted to look.</p>
-        <p>Additionally, the users appreciated when there were several calls to action, such as on the ‘About Us’ page. They felt this made browsing easy and provided them a clear path.</p>
-    </div>
-</section>
-
-<!--Conclusion section using Bootstrap grid system-->
-<section id="study" class="row study-wrapper">
-    <div id="text-container" class= "col-lg-6 col-m-6 col-sm-12">
-        <h2><b>Phase Six:</b> Final Prototype & Conclusions </h2>
-        <br>
-        <p>Our final prototype brought in large emotionally impactful images. We made some slight adjustments to the original color scheme for Citizen Advocacy to create better contrast and accessibility. And we also added more opportunities for social sharing across the site.</p>
-        <p>The typography that was modern, approachable, and easy to read. We felt this would help open site visitors up more to connecting with the subject matter of the website.</p>
-        <p>Major takeaways from this project:</p>
-        <ul>
-            <li>The role of a UX team is to discover what the common ground is between stakeholders and their users, then help everyone achieve their goals!</li>
-            <li>Put people first ALWAYS! Adding a human element to your website design is inviting humans to connect with you. UX helps the user want to interact with your brand.</li>
-        </ul>
-    </div>
-</section>
+    <footer>
+        <div id="footerleft">
+           <img class="logo" src="images/Logo.png">
+           <h2><b>Kelly Cashin</b></h2>
+           <p>kelly.e.cashin@gmail.com</p>
+           <p>Copyright 2020</p>
+        </div>
+        <div id="footerright">
+            <a href="https://www.instagram.com/kerly_q/"><img class="logo" src="Images/Instagram.png"></a>
+            <a href="https://twitter.com/kelecash"><img class="logo" src="Images/Twitter.png"></a>
+            <a href="https://www.linkedin.com/in/kelly-cashin/"><img class="logo" src="Images/LinkedIn.png"></a>
+        </div>
+    </footer>
 </body>
 <script src="js/index.js"></script>
-</html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141754546-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-141754546-2');
+</script>
+</html>

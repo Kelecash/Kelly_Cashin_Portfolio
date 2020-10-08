@@ -5,31 +5,31 @@ Top of this document is for styles to be used across the whole site.
 Styles to be used on individual pages further down document.
 */
 
-.mobile{
+.mobile {
     display: none;
 }
 
-.mobile-img{
+.mobile-img {
     display: none;
 }
 
-body a{
+body a {
     color: #AB888D;
     font-weight: bold;
 }
 
-body{
+body {
     scroll-snap-type: mandatory;
     padding: 0;
     margin: 0;
 }
 
-body u{
+body u {
     text-decoration-style: dashed;
     text-decoration-color: #AB888D;
 }
 
-h1{
+h1 {
     font-family: 'Roboto Mono';
     font-size: 45px;
     font-weight: normal;
@@ -37,34 +37,34 @@ h1{
     text-align: center;
 }
 
-h2{
+h2 {
     font-family: 'Roboto Mono';
     font-size: 18px;
     font-weight: normal;
     color: #694556;
 }
 
-body{
+body {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: 200;
     color: #694556;
 }
 
-body b{
+body b {
     color: #2B1F23;
 }
 
 /* Start asset styles */
-.logo{
+.logo {
     height: 40px;
 }
 
-#logo{
+#logo {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
-#button{
+#button {
     background-color: #5BAA0A;
     color: white;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -142,6 +142,30 @@ nav a:hover {
     z-index: 1000;
 }
 /* End Navigation Styles */
+
+/* Start Footer Styles */
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#footerleft{
+   width: 70%;
+   justify-self: flex-start; 
+   align-self: center;
+}
+
+#footerright{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 30%;
+}
+/* End Footer Styles*/
+
 /* End Site-Wide Styles */
 
 /**/
@@ -235,7 +259,7 @@ nav a:hover {
     background-image: url(../images/texture2.png), url(../images/texture1.png);
     background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
-    background-size: 500px;
+    background-size: 30%;
     display: grid;
     height: fit-content;
     grid-template-rows: 125px auto 125px;
@@ -253,7 +277,8 @@ nav a:hover {
     background-color: white;
     padding: 15px;
     margin: auto;
-    width: 50%
+    width: 80%;
+    min-width: 290px;
 }
 
 #arrow2 {
@@ -267,6 +292,9 @@ nav a:hover {
 
 #skills{
     background-image: url(../images/texture3.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 500px;
     display: grid;
     height: fit-content;
     grid-template-columns: 1fr 1fr 1fr;
@@ -299,27 +327,7 @@ nav a:hover {
     height: 250px;
     text-align: center;
 }
-
-footer{
-    display: flex;
-    flex-direction: row;
-    padding: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-#footerleft{
-   width: 70%;
-   justify-self: flex-start; 
-   align-self: center;
-}
-
-#footerright{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 30%;
-}
+/* End index.html styles */
 
 #myworkwrapper{
     display: grid;
@@ -372,10 +380,6 @@ footer{
 
 #learning-explainer{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-#learning-header{
-
 }
 
 .learning-box{
@@ -477,7 +481,7 @@ footer{
         width: 100%;
         background-image: url(../images/texture3.png);
         background-repeat: no-repeat;
-        background-position: unset;
+        background-position: left;
         background-size: cover;
         position: fixed;
         text-align: center;
@@ -491,6 +495,11 @@ footer{
     nav a{
         padding: 15px;
         line-height: 20px;
+        background-color: transparent;
+        color: #2B1F23;
+        font-weight: 400;
+        font-size: 30px;
+        padding: 25px;
     }
 
     nav ul li a{
@@ -577,7 +586,7 @@ footer{
     }
 
     #intro-container {
-        margin-top: 250px;
+        margin-top: 265px;
     }
 
     #hello {
@@ -589,6 +598,10 @@ footer{
         margin-bottom: -605px;
     }
 
+    #about {
+        grid-template-rows: 125px auto;
+    }
+
     #aboutcontainer{
         grid-column: 1 / span 4;
         grid-row: 2 / span 1;
@@ -596,10 +609,11 @@ footer{
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
         height: fit-content;
         background-color: white;
+        margin-bottom: 50px;
     }
 
     #skills{
-        margin-top: 15px;
+        padding-bottom: 15px;
         display: grid;
         height: fit-content;
         grid-template-rows: .5fr 1fr 1fr 1fr;
