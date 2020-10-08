@@ -153,7 +153,8 @@ nav a:hover {
 /* Start 'index.html' Styles */
 .container {
     scroll-snap-align: start;
-    height: 500px;
+    min-height: 550px;
+    height: fit-content;
     width: 100%;
     opacity: 0;
 }
@@ -172,7 +173,7 @@ nav a:hover {
     display: grid;
     grid-template-rows: 75% 25%;
     width: 45%;
-    height: 100%;
+    height: auto;
     margin: 0 2.5%;
 }
 
@@ -234,10 +235,11 @@ nav a:hover {
     background-image: url(../images/texture2.png), url(../images/texture1.png);
     background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
-    background-size: 30%;
+    background-size: 500px;
     display: grid;
     height: fit-content;
     grid-template-rows: 125px auto 125px;
+    grid-template-columns: 100%;
 }
 
 #aboutheader {
@@ -264,7 +266,7 @@ nav a:hover {
 }
 
 #skills{
-    margin-top: 15px;
+    background-image: url(../images/texture3.png);
     display: grid;
     height: fit-content;
     grid-template-columns: 1fr 1fr 1fr;
@@ -302,7 +304,6 @@ footer{
     display: flex;
     flex-direction: row;
     padding: 15px;
-    margin-top: 50px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
@@ -552,7 +553,7 @@ footer{
     /* End mobile navigation styling */
 
     #hero {
-        flex-direction: column-reverse;
+        flex-direction: column;
         background-size: 400px;
         background-position-y: 69px;
         background-position-x: -36px;
@@ -564,7 +565,7 @@ footer{
         align-items: flex-end;
         justify-content: center;
         width: 100%;
-        height: 100%;
+        height: auto;
         margin: 0%
     }
 
@@ -572,7 +573,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 480px;
+        height: max-content;
     }
 
     #intro-container {
@@ -580,12 +581,12 @@ footer{
     }
 
     #hello {
-        margin-top: -365px;
         margin-right: 15px;
     }
 
     #social-buttons {
         margin-right: 15px;
+        margin-bottom: -605px;
     }
 
     #aboutcontainer{
