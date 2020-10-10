@@ -47,7 +47,7 @@ h2 {
 body {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     color: #694556;
 }
 
@@ -119,14 +119,14 @@ nav a {
     color: #694556;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 16px;
 }
 
 nav a:hover {
     background-color: #5BAA0A;
     color: white;
-    font-weight: 200;
+    font-weight: 300;
     text-decoration: none;
     text-shadow: none;
 }
@@ -334,6 +334,7 @@ footer{
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr 1fr 1fr;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #casestudies{
