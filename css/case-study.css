@@ -26,15 +26,33 @@
 
 .study-image img {
     width: 90%;
-    padding: 5%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 #wireframe {
     width: 35%;
-    padding: 5%;
+    margin: 5%;
     vertical-align: middle;
 }
 
 #wireframe-container {
     grid-row: span 2;
+}
+
+td {
+    padding: 15px;
+    font-style: italic;
+    font-size: 12px;
+    width: 25%;
+}
+
+td b{
+    font-weight: 400;
+    color: #694556;
+}
+
+table {
+   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+   margin: 0px 50px;
+   table-layout: fixed;
 }

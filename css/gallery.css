@@ -1,0 +1,131 @@
+.gallery {
+  display: grid;
+  grid-gap: 15px; 
+  padding: 15px;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.gallery-object {
+   height: 200px;
+   width: 200px;
+}
+
+.gallery-object:nth-of-type(3n) {
+    grid-column: span 2;  
+}
+  
+.gallery-object:nth-of-type(5n) {
+    grid-row: span 2;  
+}
+
+#photo13 {
+    background-image: url(../images/img_6151.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo12 {
+    background-image: url(../images/img_6152.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo14 {
+    background-image: url(../images/img_8202.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo15 {
+    background-image: url(../images/img_8430.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo16 {
+    background-image: url(../images/IMG_0423.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo17 {
+    background-image: url(../images/IMG_6243.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo19 {
+    background-image: url(../images/IMG_6213.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo18 {
+    background-image: url(../images/diego.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo2 {
+    background-image: url(../images/powerbowls.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo1 {
+    background-image: url(../images/kalesalad.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo3 {
+    background-image: url(../images/options-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo4 {
+    background-image: url(../images/gnocci.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo5 {
+    background-image: url(../images/cheesecake.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo6 {
+    background-image: url(../images/chicken-cordon-bleu-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo7 {
+    background-image: url(../images/IMG_8626.jpg);
+    background-size: cover;
+    background-position-y: -40px;
+    background-repeat: no-repeat;
+}
+
+#photo8 {
+    background-image: url(../images/IMG_0013.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo9 {
+    background-image: url(../images/IMG_0018.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+#photo10 {
+    background-image: url(../images/portrait.jpg);
+    background-size: cover;
+    background-position: center;
+}

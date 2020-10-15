@@ -15,7 +15,16 @@ Styles to be used on individual pages further down document.
 
 body a {
     color: #AB888D;
-    font-weight: bold;
+}
+
+body a:hover {
+    color: white;
+    background-color: #5BAA0A;
+}
+
+li a:hover {
+    color: white;
+    background-color: #5BAA0A;
 }
 
 body {
@@ -177,7 +186,8 @@ footer{
 /* Start 'index.html' Styles */
 .container {
     scroll-snap-align: start;
-    min-height: 550px;
+    min-height: 500px;
+    padding-top: 5%;
     height: fit-content;
     width: 100%;
     opacity: 0;
@@ -266,10 +276,6 @@ footer{
     grid-template-columns: 100%;
 }
 
-#aboutheader {
-    grid-row: 1 / span 1;
-}
-
 #aboutcontainer{
     grid-row: 2 / span 1;
     height: fit-content;
@@ -293,8 +299,8 @@ footer{
 #skills{
     background-image: url(../images/texture3.png);
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 500px;
+    background-position-y: 145px;
+    background-size: 100%;
     display: grid;
     height: fit-content;
     grid-template-columns: 1fr 1fr 1fr;
@@ -480,9 +486,9 @@ footer{
         padding-top: 70px;
         height: 100%;
         width: 100%;
-        background-image: url(../images/texture3.png);
+        background-image: url(../images/texture4.png);
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: center;
         background-size: cover;
         position: fixed;
         text-align: center;
@@ -496,7 +502,7 @@ footer{
     nav a{
         padding: 15px;
         line-height: 20px;
-        background-color: transparent;
+        background-color: rgba(255,255,255, 0.5);
         color: #2B1F23;
         font-weight: 400;
         font-size: 30px;
@@ -588,6 +594,9 @@ footer{
 
     #intro-container {
         margin-top: 265px;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 0px;
     }
 
     #hello {
@@ -604,13 +613,9 @@ footer{
     }
 
     #aboutcontainer{
-        grid-column: 1 / span 4;
-        grid-row: 2 / span 1;
-        padding: 15px;
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-        height: fit-content;
+        width: auto;
         background-color: white;
-        margin-bottom: 50px;
+        margin: 15px;
     }
 
     #skills{
