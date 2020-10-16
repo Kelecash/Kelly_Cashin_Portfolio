@@ -357,6 +357,8 @@ footer{
     text-align: center;  
     margin-left: 15px;
     margin-top: 15px;
+    grid-row: span 1;
+    grid-column: span 1;
 }
 
 #myworkheader{
@@ -380,32 +382,56 @@ footer{
 }
 
 #learning-grid{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 15px; 
+    padding: 15px;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
 }
 
 #learning-explainer{
+    padding: 25px;
+    padding-top: 100px;
+    grid-row: span 2;
+    grid-column: span 2;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#learning-header {
+    grid-column: span 2;
+    grid-column-start: 3 / span 2;
 }
 
 .learning-box{
     display: flex;
-    flex-direction: row;
-    height: 30vh;
-    width: 30vh;
+    flex-direction: column;
+    min-height: 200px;
+    grid-row: span 1;
+    grid-column: span 1;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    margin-left: 15px;
-    margin-bottom: 15px;
 }
 
-.learning-box img, .learning-box a {
-    display: flex;
-    flex-direction: row;
+.learning-box a{
+    width: 90%;
     height: 90%;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.learning-box img {
+    height: 70%;
     margin: auto;
 }
+
+.learning-box p {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
 
 #text-container{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
