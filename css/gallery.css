@@ -8,9 +8,17 @@
   grid-auto-flow: dense;
 }
 
+.gallery-object.lazy{
+    background-image: none;
+    background-color: #5BAA0A;
+}
 .gallery-object {
     height: 100%;
     width: 100%;
+}
+.gallery-object img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .gallery-object:nth-of-type(3n) {
@@ -46,19 +54,19 @@
 }
 
 #photo16 {
-    background-image: url(../images/IMG_0423.jpg);
+    background-image: url(../images/img_0423.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #photo17 {
-    background-image: url(../images/IMG_6243.JPG);
+    background-image: url(../images/img_6243.JPG);
     background-size: cover;
     background-position: center;
 }
 
 #photo19 {
-    background-image: url(../images/IMG_6213.png);
+    background-image: url(../images/img_6213.png);
     background-size: cover;
     background-position: center;
 }
@@ -106,20 +114,20 @@
 }
 
 #photo7 {
-    background-image: url(../images/IMG_8626.jpg);
+    background-image: url(../images/img_8626.jpg);
     background-size: cover;
     background-position-y: -40px;
     background-repeat: no-repeat;
 }
 
 #photo8 {
-    background-image: url(../images/IMG_0013.JPG);
+    background-image: url(../images/img_0013.JPG);
     background-size: cover;
     background-position: center;
 }
 
 #photo9 {
-    background-image: url(../images/IMG_0018.JPG);
+    background-image: url(../images/img_0018.JPG);
     background-size: cover;
     background-position: center;
 }

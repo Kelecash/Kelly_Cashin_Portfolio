@@ -6,27 +6,16 @@
         <title>Kelly's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/case-study.css">
-        <link rel="icon" type="image/png" href="images/Logo.png">
+        <link rel="icon" type="image/png" href="images/logo.png">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Hotjar Tracking Code for https://kelecash.github.io/UX_UI_HW_19/ -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:1982219,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
     </head>
 <body>
     <!--This is the responsive navigation to be added to each page-->
     <section class="navigation">
         <div class="nav-container">
         <div class="brand">
-        <a href="index.html"><img class="logo" src="images/Logo.png"></a>
+        <a href="index.html"><img class="logo" src="images/logo.png"></a>
         </div>
         <nav>
         <div class="nav-mobile">
@@ -39,99 +28,147 @@
         </div>
     </section>
     <!--Navigation ends here-->
-    <section class="study-wrapper">
+    <section class="study-wrapper" id="saige">
+        <div>
+            <h1>Retrospective: Saige Chefs Onboarding</h1>
+        </div>
         <div class="study-section" id="intro">
-            <p><b>Context:</b> Citizen Advocacy is a nonprofit organization whose goal is to foster long-term friendships between people with disabilities and an advocate. With social changes due to Covid-19, the need for a web presence that encourages social sharing and friend-raising in a digital environment has increased.</p>
-            <p><b>My Role:</b> UX Designer</p>
-            <p><b>My Team:</b> Hannah Turner (hturner0696@gmail.com) & David Duffee (davidhduffee@gmail.com)</p>
+            <img src="images/saige_logo.png" class="study_logo" style="border-radius: 100px;">
+            <p><b>Context:</b> Saige Chefs was an Atlanta Startup that used machine learning to make meal recommendations for their users. Users could then subscribe to receive weekly deliveries of these meals. During the onboarding process, customers filled out their preferences. A new custom menu was generated for them each week.</p>
+            <p><b>My Role:</b> Marketing Specialist
+            <p><b>Special Note:</b> This is a look back at work I did while I was still learning about UX from a digital marketing role. I thought it would add context to how my interest in UX began, and how my process has developed since that time. Most notably, testing is missing from this project. This is something I would now incorporate into each step of the design process.</p>
             <br>
             <ul><h2><b>Jump to:</b></h2>
                 <li><a href="#phase1">Phase One: User Research</a></li>
                 <li><a href="#phase2">Phase Two: Definition & Synthesis</a></li>
                 <li><a href="#phase3">Phase Three: Ideation</a></li>
                 <li><a href="#phase4">Phase Four: Prototype</a></li>
-                <li><a href="#phase5">Phase Five: User Testing & Outcomes</a></li>
-                <li><a href="#phase6">Phase Six: Final Prototype & Conclusions</a></li>
+                <li><a href="#phase5">Phase Five: Conclusions</a></li>
             </ul>
-        </div>
-        <div>
-            <h1>Citizen Advocacy of Atlanta-DeKalb Web Redesign</h1>
         </div>
         <div class="study-section" id="phase1">
             <h2><a name="phase1"><b>Phase One:</b> User Research</a></h2>
             <br>
-            <p>We started interviewing the director to understand the role their website filled relative to the current needs of the organization. The inability to meet with others in community spaces due to Covid-19 was preventing the coordinator at Citizen Advocacy to discover people willing to support their misison. This guided our research in asking: How do people discover causes? What them to support a cause? When and how do they share a cause? We conducted a series of interviews. The data we pooled from the interviews guided our creation of online survey to better understand people’s motives. Our findings were that most people prefer to support a cause they feel a personal connection to, they are more willing to trust an organization that has been social-proofed by people in their network, and they most likely to share visual media and articles. </p>
+            <p>Our research process was a collaboration between customer services and marketing. Our customer service team reported qualitative data from our user base. Our marketing team gathered quantitative data via FullStory.</p>
+            <p>We found the biggest point of drop-off in the onboarding process was a step requiring users to create profiles for their family members. In the initial design, this step was intended to customize the user's experience. Each person on a plan was recommended dishes personalized to their taste. For new users, this step felt invasive. Before they could see what they were purchasing, they were expected to exchange their personal information.</p>
+            <p>One argument against removing the profiles feature was that it would change the product for our activated customer. However, when we surveyed our users we found most ignored this feature entirely, while others found it to be limiting and inflexible. It was particularly frustrating when a member on their plan was traveling or had other plans for their meals. </p>
+        </div>
+        <div class="study-image">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <b>Thinks/Feels</b>
+                        <ul>
+                            <li>Wants to be the first to try something new.</li>
+                            <li>Disappointed she can't do all that she wants.</li>
+                            <li>Feels guilty when getting drive-thru meals.</li>
+                        </ul>
+                    </td>
+                    <td colspan="2">
+                        <b>Says/Does</b>
+                        <ul>
+                            <li>Spends 40+ hours working, not including commutes.</li>
+                            <li>Keeps schedule packed- often has to cancel.</li>
+                            <li>Maintains a lifestyle that’s responsible and health-conscious. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        <b>Reasons to Use Product</b>
+                        <ul>
+                            <li>It’s fast but nutritious.</li>
+                            <li>Personalized menus are a perk.</li>
+                            <li>It is easy and gives more hours during the day.</li>
+                        </ul>   
+                    </td>
+                    <td colspan="2"><img src="images/persona.png"></td>
+                    <td colspan="1">
+                        <b>Reasons to Buy Product</b>
+                        <ul>
+                            <li>Photos of the food look appetizing.</li>
+                            <li>A real meal improves quality of life.</li>
+                            <li>Fewer grocery trips.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <b>Pains</b>
+                        <ul>
+                            <li>Particular about what she eats- food is personal!</li>
+                            <li>Worries about the detriments of fast food to her health.</li>
+                            <li>Doesn’t like or have time to cook.</li>
+                            <li>Grocery shopping each week takes time out of what he wants to do.</li>
+                        </ul>
+                    </td>
+                    <td colspan="2">
+                        <b>Gains</b>
+                        <ul>
+                            <li>Personalized menu tailored to her tastes.</li>
+                            <li>Food is fresh and nutritious with no preservatives.</li>
+                            <li>All the food is heat & eat, no prep required.</li>
+                            <li>Subscription service ensures that his fridge will always be stocked.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
         </div>
         <div class="study-section" id="phase2">
             <h2><a name="phase2"><b>Phase Two:</b> Definition & Synthesis</a></h2>
             <br>
-            <p>There were 4 major user insights we uncovered in our research, which could be summed up in the following statements:</p>
+            <p>Marketing already created a user persona, which we used when thinking about the onboarding redesign. Our user base were primarily younger. They had used similar services before, and they were searching for a healthier easier alternative to a service like Blue Apron.</p>
+            <p>With that in mind, we knew the onboarding process needed to be sleek and easy to use. It needed to be familiar as well to remove any additional layers of complexity, which might take away from the overall purpose of our product. It also needed to be flexible to our user’s lifestyle, which was a challenge with the current product.</p>
+            <p>Our takeaways were:</p>
             <ul>
-                <li>I want to share articles and visual media on Facebook and Instagram.</li>
-                <li>I need to learn through visual media and articles.</li>
-                <li>I want to support a cause by donating and raising awareness.</li>
-                <li>I wish I knew the impact of disabilities, how I can help, and what is already being done.</li>
+                <li>Reduce the overall number of steps in onboarding.</li>
+                <li>Allow customers to see the product as early in the onboarding process as possible.</li>
+                <li>Remove individual custom profiles from onboarding, introduce it as an advanced feature in the user settings for those who want to use it.</li>
             </ul>
-            <p>We found that in order to gain support, Citizen Advocacy would need to make clear to website visitors: what is currently being done, and what the user specifically can do to help. We wanted to create 3 clear user paths: volunteer, donate or spread the word.</p>
-            <p>Incorporating these flows into the design of the website would marry the needs of Citizen Advocacy to the needs of potential donors.</p>
-        </div>
-        <div class="study-image">
-            <img src="images/citizenadvocacy-userflow.png">
         </div>
         <div class="study-section" id="phase3">
             <h2><a name="phase3"><b>Phase Three:</b> Ideation</a></h2>
             <br>
-            <p>When thinking about visual design, we wanted to make the human connections that Citizen Advocacy builds at the forefront of each page. This meant adding larger and more visual imagery of their work. We would do this by using large hero images relevant to each site page.</p>
-            <p>We didn’t want people to have to search for ways to help. We wanted to provide them several calls to action in order to coax them along the three user paths we created to help Citizen Advocacy.</p>
-            <p>Additionally, we wanted a complete redesign where relationship stories and Citizen Advocacy’s philosophy in social justice for people with disabilities received the first priority.</p>
+            <p>More than 90% of American consumers have used online retail for shopping, so to make sign-up intuitive for them, we sought inspiration from familiar retail sites. Many of the ideas gathered at this stage were inspired by similar services or taken from ecommerce check-outs.</p> 
+            <p>The features we wanted to incorporate included:<p>
+                <ul>
+                    <li>A redesigned landing page that served more as a first step in onboarding rather than appearing like a pitch for investors- less copy, more images, more calls to action.</li>
+                    <li>Filters to provide customers more flexibility- previously meals were selected for the user according to survey responses during onboarding. Users were then prevented from ever seeing meals they were interested based on their replied. We wanted to give the user more options, and in the future build a recommendation system that learned based on user behavior.</li>
+                    <li>Use of images in the cart view with a detail modal to give users a product description with allergen information.</li>
+                    <li>A cart view where users could choose see which meals they ordered across their entire account.</li>
         </div>
-        <div class="study-image" id="phase4">
-            <img src="images/citizenadvocacy-matrix.png">
+        <div class="study-image" id="wireframe-container">
+            <img id="wireframe" src="images/saige-wireframe-1.png">
+            <img id="wireframe" src="images/saige-wireframe-2.png">
+            <img id="wireframe" src="images/saige-wireframe-3.png">
         </div>
         <div class="study-section" id="phase4">
             <h2><a name="phase4"><b>Phase Four:</b> Prototype</a></h2>
             <br>
-            <p>Our initial prototype focused on the reorganization of site information. We reduced condensed the number of options within the primary navigation by combining site pages that housed related information. </p>
-            <p>We also used hero images across the site to create a visual experience with an immediate emotional impact.</p>
-            <p>On the homepage, the three user paths are made immediately apparent  with calls to action as the user scrolls.</p>
-        </div>
-        <div class="study-image" id="wireframe-container">
-            <img id="wireframe" src="images/homepage-prototype.png">
-            <img id="wireframe" src="images/aboutus-prototype.png">
+            <p>The goal was to get customers started right away by keeping our homepage minimalistic. We would move the text-heavy details to an FAQ for customers who wanted to do more exploring or research first.</p>
+            <p>The overall sign-up process was shortened to four steps, which would take less time and reduce the potential for missed bugs when we deployed site updates. We added a progress bar with navigation arrows to help users orient themselves in the process.</p>
+            <p>In creative, we were working on a visual representation of what the customer could expect to receive in their delivery to be shown on the checkout page. Again, the goal was to make a page that is familiar to people who have shopped online before so that they know their information is safe and secure. The follow-up to an order would include an email with what to expect and a pop-up survey for marketing purposes.</p>
+            <p>View the full wireframe on <a href="https://whimsical.com/15HgXmV9gNmnLchQ6vbfSo#7YNFXnKbYoAUgAXFa2P8o">whimsical.com</a></p>
         </div>
         <div class="study-section" id="phase5">
-            <h2><a name="phase5"><b>Phase Five:</b> User Testing & Outcomes</a></h2>
+            <h2><a name="phase5"><b>Phase Five:</b> Conclusions</a></h2>
             <br>
-            <p>We made a user testing plan that would mirror the average use case for someone learning about Citizen Advocacy for the very first time. Users were given a series of 4 tasks to complete:</p>
+            <p>
+                I left Saige before I had the chance to execute this project. There would have been several next steps to determine the impact of a new onboarding on our funnel.
+            </p>
             <ul>
-                <li>Find the organization’s mission statement</li>
-                <li>Locate the organization’s office address</li>
-                <li>Find information about becoming a Citizen Advocate</li>
-                <li>Find options for donating</li>
+                <li>Test the onboarding process and get user feedback to iterate the design.</li>
+                <li>Create a final prototype.</li>
+                <li>A/B test the final prototype against the previous onboarding to see if cart abandons decreased and conversions increased.</li>
+            <p>
+                Because developer time is expensive, I would have mimicked the new oboarding process with a MVP that utilized outside services (for example, a combination of Landing Lion, Mailchimp and Square) to prove our hypothesis that a new onboarding would improve our conversion rates. 
+            </p>
             </ul>
-            <p>We discovered that the updated navigation and information architecture for the site made it quick and easy for users to discover what they needed.</p>
-            <p>Our primary observation for site improvements involved further building out the home page with key pieces of information about Citizen Advocacy- such as the mission statement- since this is where user’s intuitively wanted to look.</p>
-        <p>Additionally, the users appreciated when there were several calls to action, such as on the ‘About Us’ page. They felt this made browsing easy and provided them a clear path.</p>
-        </div>
-        <div class="study-section" id="phase6">
-            <h2><a name="phase6"><b>Phase Six:</b> Final Prototype & Conclusions</a></h2>
-            <br>
-            <p>Our final prototype brought in large emotionally impactful images. We made some slight adjustments to the original color scheme for Citizen Advocacy to create better contrast and accessibility. And we also added more opportunities for social sharing across the site.</p>
-            <p>The typography that was modern, approachable, and easy to read. We felt this would help open site visitors up more to connecting with the subject matter of the website.</p>
-            <p>Major takeaways from this project:</p>
-            <ul>
-                <li>The role of a UX team is to discover what the common ground is between stakeholders and their users, then help everyone achieve their goals!</li>
-                <li>Put people first ALWAYS! Adding a human element to your website design is inviting humans to connect with you. UX helps the user want to interact with your brand.</li>
-            </ul>
-        </div>
-        <div class="study-image" id="wireframe-container">
-            <img id="wireframe" src="images/aboutus-finaldesign.png">
-            <img id="wireframe" src="images/homepage-finaldesign.png">
         </div>
     </section>
     <footer>
         <div id="footerleft">
-           <img class="logo" src="images/Logo.png">
+           <img class="logo" src="images/logo.png">
            <h2><b>Kelly Cashin</b></h2>
            <p>kelly.e.cashin@gmail.com</p>
            <p>Copyright 2020</p>

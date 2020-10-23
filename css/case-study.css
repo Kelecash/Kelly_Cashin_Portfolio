@@ -1,6 +1,6 @@
 .study-wrapper {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     grid-template-rows: fit-content;
     flex-wrap: wrap;
     width: 100%;
@@ -8,41 +8,48 @@
 }
 
 .study-section {
-    grid-column: 1 / span 1;
+    background-color: white;
     grid-row: span 1;
-    width: 90%;
-    padding: 25px;
-    padding-top: 100px;
+    width: 80%;
+    max-width: 800px;
+    padding: 10%;
     height: fit-content;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    margin: 15px 0;
+    margin: 15px auto;
+}
+
+#intro {
+    grid-column: 1 / span 1;
 }
 
 .study-image {
+    background-color: transparent;
     width: 100%;
+    max-width: 800px;
     margin: auto;
     text-align: center;
+    justify-self: end;
 }
 
 .study-image img {
-    width: 90%;
+    width: 100%;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
-#wireframe {
-    width: 35%;
-    margin: 5%;
-    vertical-align: middle;
+#wireframe-container {
+    display: flex;
+    flex-direction: row;
 }
 
-#wireframe-container {
-    grid-row: span 2;
+#wireframe {
+    width: 30%;
+    margin: auto;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 td {
     padding: 15px;
     font-style: italic;
-    font-size: 12px;
     width: 25%;
 }
 
@@ -52,7 +59,41 @@ td b{
 }
 
 table {
+   background-color: white;
    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
    margin: 0px 50px;
    table-layout: fixed;
+}
+
+#saige {
+    background-image: url(../images/texture4.png);
+    background-color: #c4f4dc;
+    background-blend-mode: color-dodge;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+#afs {
+    background-image: url(../images/texture4.png);
+    background-color: #2e6de2;
+    background-blend-mode: color-dodge;
+    background-size: 100%;
+}
+
+#citizen-advocacy {
+    background-image: url(../images/texture4.png);
+    background-color: #FD8282;
+    background-blend-mode: color-dodge;
+    background-size: 100%;
+}
+
+.study_logo {
+    align-self: center;
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+ul {
+    text-align: left;
 }

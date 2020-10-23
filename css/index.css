@@ -22,9 +22,19 @@ body a:hover {
     background-color: #5BAA0A;
 }
 
-li a:hover {
+.case-study li:hover {
     color: white;
     background-color: #5BAA0A;
+}
+
+#casestudies li {
+    list-style: none;
+    width: fit-content
+}
+
+#casestudies li:hover {
+    color: white;
+    background-color: #5BAA0A; 
 }
 
 body {
@@ -64,6 +74,45 @@ body b {
     color: #2B1F23;
 }
 
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    background-color: white;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    font-size: 50px;
+    color: #2B1F23;
+    margin: auto;
+    -webkit-animation: bounce 3s infinite ease-in-out;
+    transition: all;
+}
+
+.logo-background {
+    opacity: 70%;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    background-image: url(../images/texture3.png);
+    background-size: 300%;
+    background-position-x: center;
+    background-position-y: 4px;
+
+    z-index: -1;
+}
+
+
 /* Start asset styles */
 .logo {
     height: 40px;
@@ -83,7 +132,7 @@ body b {
 /* Start Navigation Styles */
 .navigation {
     height: 70px;
-    background: transparent;
+    background: white;
     position: relative;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     z-index: 2000;
@@ -154,6 +203,7 @@ nav a:hover {
 
 /* Start Footer Styles */
 footer{
+    background-color: white;
     display: flex;
     flex-direction: row;
     padding: 15px;
@@ -336,14 +386,16 @@ footer{
 /* End index.html styles */
 
 #myworkwrapper{
+    background-image: url(../images/texture4.png);
+    background-size: cover;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 #casestudies{
+    background-color: white;
     padding: 25px;
     padding-top: 100px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -352,6 +404,7 @@ footer{
 }
 
 .workcontainer{
+    background-color: white;
     padding: 25px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     text-align: center;  
@@ -462,7 +515,7 @@ footer{
     margin: 15px 0px 0px 15px;
 }
 
-.li active{
+li active{
     color: #AB888D;
 }
 

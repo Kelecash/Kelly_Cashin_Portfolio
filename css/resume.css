@@ -1,0 +1,121 @@
+body{
+    background-image: url(../images/texture4.png);
+    background-size: 100%;
+}
+
+#pdf {
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    font-size: 25px;
+}
+#resume-container {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 66% 33%;
+    grid-template-rows: 200px auto;
+    column-gap: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+#resume-container ul {
+    color: #2B1F23;
+    font-weight: 300;
+}
+
+#resume-container li { 
+    margin: 10px;
+}
+
+#resume-container h2 {
+    color: #5BAA0A;
+    font-weight: bold;
+}
+
+#resume-container p {
+    color: #2B1F23;
+}
+
+#resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    text-align: center;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    margin: 100px 50px;
+}
+
+#resume-header h1 {
+    margin: 0px;
+    text-align: left;
+}
+
+#resume-colleft {
+    padding: 25px 0px 50px 50px;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#resume-colright {
+    padding: 25px 50px 50px 0px;
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+@media only screen and (max-width: 700px) {
+    #resume-container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    #resume-container p, h2 {
+        text-align: center;
+        row-gap: 15px;
+    }
+
+    #resume-header {
+        grid-row: 1 / span 1;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    #resume-header div{
+        text-align: center;
+        padding: 25px 0px 0px 0px;
+        margin: auto;
+    }
+
+    #resume-colleft {
+        padding: 10px;
+    }
+
+    #resume-colright {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 15px;
+        column-gap: 5px;
+    }
+
+    #technical-skills {
+        grid-column: span 2;
+    }
+
+    #internships {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    #education {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+}

@@ -6,27 +6,16 @@
         <title>Kelly's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/case-study.css">
-        <link rel="icon" type="image/png" href="images/Logo.png">
+        <link rel="icon" type="image/png" href="images/logo.png">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Hotjar Tracking Code for https://kelecash.github.io/UX_UI_HW_19/ -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:1982219,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
     </head>
 <body>
     <!--This is the responsive navigation to be added to each page-->
     <section class="navigation">
         <div class="nav-container">
         <div class="brand">
-        <a href="index.html"><img class="logo" src="images/Logo.png"></a>
+        <a href="index.html"><img class="logo" src="images/logo.png"></a>
         </div>
         <nav>
         <div class="nav-mobile">
@@ -39,8 +28,12 @@
         </div>
     </section>
     <!--Navigation ends here-->
-    <section class="study-wrapper">
+    <section class="study-wrapper" id="afs">
+        <div>
+            <h1>Atlanta Film Series Responsive Redesign</h1>
+        </div>
         <div class="study-section" id="intro">
+            <img src="images/afs-logo-dark.png" class="study_logo">
             <p><b>Context:</b> The Atlanta Film Series is an annual showcase of four unique festivals. This film series offers an opportunity for creatives to showcase their work and for the community to experience their stories on screen. Our web redesign combined four desktop sites into a single responsive website. </p>
             <p><b>My Role:</b> UX Designer</p>
             <p><b>My Team:</b> Kate Williams (kjw00022@gmail.com), McKenzie Peterson (petersonmckenzie67@gmail.com) & Sayli Dhake (saylidhake@gmail.com)</p>
@@ -53,9 +46,6 @@
                 <li><a href="#phase5">Phase Five: User Testing & Outcomes</a></li>
                 <li><a href="#phase6">Phase Six: Final Prototype & Conclusions</a></li>
             </ul>
-        </div>
-        <div>
-            <h1>Atlanta Film Series Responsive Redesign</h1>
         </div>
         <div class="study-section" id="phase1">
             <h2><a name="phase1"><b>Phase One:</b> User Research</a></h2>
@@ -75,48 +65,58 @@
                 <tr>
                     <td colspan="2">
                         <b>Thinks/Feels</b>
-                            I want to feel welcomed.
-                            I want to feel prepared.
-                            I need to be socially distant.
-                            I'm unhappy with virtual events.
+                        <ul>
+                            <li>I want to feel welcomed.</li>
+                            <li>I want to feel prepared.</li>
+                            <li>I need to be socially distant.</li>
+                            <li>I'm unhappy with virtual events.</li>
                         </ul>
                     </td>
                     <td colspan="2">
                         <b>Says/Does</b>
-                            Seeks out unique experiences.
-                            Reads film synopsis
-                            Wears mask to outdoor events.
-                            Attends events to break routine.
+                        <ul>
+                            <li>Seeks out unique experiences.</li>
+                            <li>Reads film synopsis.</li>
+                            <li>Wears mask to outdoor events.</li>
+                            <li>Attends events to break routine.</li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="1">
                         <b>Sees</b>
-                            Event photos from years previous.
-                            Interesting trailers.
+                        <ul>
+                            <li>Event photos from years previous.</li>
+                            <li>Interesting trailers.</li>
+                        </ul>
                     </td>
                     <td colspan="2"><img src="images/user.png"></td>
                     <td colspan="1">
                         <b>Hears</b>
-                            The latest guidelines for Covid.
-                            Conversation about new film.
+                        <ul>
+                            <li>The latest guidelines for Covid.</li>
+                            <li>Conversation about new film.</li>
+                        </ul>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <b>Pains</b>
-                            Crowded spaces make me nervous right now.
-                            Prices and access to art-house/independent film can be difficult.
-                            Difficult to plan for parking in the city.
-                            Hard to find activities that are safe.
+                        <ul>
+                            <li>Crowded spaces make me nervous right now.</li>
+                            <li>Prices and access to art-house/independent film can be difficult.</li>
+                            <li>Difficult to plan for parking in the city.</li>
+                            <li>Hard to find activities that are safe.</li>
+                        </ul>
                     </td>
                     <td colspan="2">
                         <b>Gains</b>
-                            Smaller festivals mean a smaller crowd.
-                            Film series offers broad selection for a reasonable price.
-                            There is a MARTA stop and parking lot nearby.
-                            The event is outdoors and follows CDC guidelines.
+                        <ul>
+                            <li>Smaller festivals mean a smaller crowd.</li>
+                            <li>Film series offers broad selection for a reasonable price.</li>
+                            <li>There is a MARTA stop and parking lot nearby.</li>
+                            <li>The event is outdoors and follows CDC guidelines.</li>
+                        </ul>
                     </td>
                 </tr>
             </table>
@@ -157,9 +157,6 @@
             <img id="wireframe" src="images/mobile_navigation_a.png">
             <img id="wireframe" src="images/mobile_shortfest_about.png">
             <img id="wireframe" src="images/mobile_shortest_tickets.png">
-            <img id="wireframe" src="images/mobile_navigation_midfi.png">
-            <img id="wireframe" src="images/mobile_about_midfi.png">
-            <img id="wireframe" src="images/mobile_tickets_midfi.png">
         </div>
         <div class="study-section" id="phase5">
             <h2><a name="phase5"><b>Phase Five:</b> User Testing & Outcomes</a></h2>
@@ -174,10 +171,21 @@
                 <li>Tighten up the layout to be consistent across the site to make it easier for the user to orient themselves.</li>
             </ul>
         </div>
+        <div class="study-image" id="wireframe-container">
+            <img id="wireframe" src="images/mobile_navigation_midfi.png">
+            <img id="wireframe" src="images/mobile_about_midfi.png">
+            <img id="wireframe" src="images/mobile_tickets_midfi.png">
+        </div>
         <div class="study-section" id="phase6">
             <h2><a name="phase6"><b>Phase Six:</b> Final Prototype & Conclusions</a></h2>
             <br>
-            <p>Our final prototype was done in front-end development. Here is where the team learned a valuable less that 
+            <p>Our final prototype was done in front-end development. This is what we learned during the development process:</p>
+            <ul>
+                <li>Involve development from the beginning! For example, if your team intends to build a site using Bootstrap, then you need to avoid too much customization when creating prototypes. Your dev team needs input early and often.</li>
+                <li>Test for acessibility and use accessibility tools. Just because something looks good to your team doesn't mean it will be helpful to your user.</li>
+                <li>Refer back to your priority matrix so you don't lose sight of your goals. Especially when you have a short deadline.</li>
+            </ul>
+            <p>Future changes to be made with this site would be the inclusion of higher res images. Spaces for supplementary materials on film pages to engage the audience before they attend the festival. A newsletter (and newsletter sign-up on the site) to help the fest update attendees with relevant information and market to them for future festivals.</p>
         </div>
         <div class="study-image" id="wireframe-container">
         
@@ -185,7 +193,7 @@
     </section>
     <footer>
         <div id="footerleft">
-           <img class="logo" src="images/Logo.png">
+           <img class="logo" src="images/logo.png">
            <h2><b>Kelly Cashin</b></h2>
            <p>kelly.e.cashin@gmail.com</p>
            <p>Copyright 2020</p>
